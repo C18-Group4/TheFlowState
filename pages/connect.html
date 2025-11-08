@@ -6,29 +6,88 @@
     <title>Connect/Get Involved</title>
     <link
       rel="icon"
-      type="TheFlowState Tab Icon Water Droplet"
-      href="/assets/Images/ConnectTabIcon-Droplet.png"
+      type="TheFlowState Custom Tab Icon"
+      href="/assets/Images/TheFlowState.png"
     />
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
-  <body class="contact-body">
-    <div class="contact-container">
-      <form action="" class="contact-left">
-        <div class="contact-left-title">
-          <h2>Get Involved</h2>
-          <hr>
+  <body>
+    <header>
+      <nav class="nav nav-top">
+        <a class="logo-btn" href="index.html">
+          <img src="/assets/Images/TheFlowState.png" alt="Home" />
+          <p>The Flow State</p>
+        </a>
+      </nav>
 
+      <nav class="nav nav-bottom">
+        <a href="pages/About.html">About</a>
+        <a href="pages/connect.html">Connect</a>
+        <a href="pages/donation.html">Donate</a>
+        <a href="pages/resources.html">Resources</a>
+      </nav>
+    </header>
 
+    <div class="contact-body">
+      <div class="contact-container">
+        <form action="" class="contact-left">
+          <div class="contact-left-title">
+            <h2>Get Involved</h2>
+            <hr />
+          </div>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your name"
+            class="contact-inputs"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email"
+            class="contact-inputs"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your message"
+            class="contact-inputs"
+            required
+          ></textarea>
+          <button type="submit">Submit <img src="" alt="" /></button>
+        </form>
+
+        <div class="contact-right">
+          <img
+            id="contact-page-main-img"
+            src="/assets/Images/Contact-Page-Get-Involved.png"
+            alt="Person passing water in a field"
+          />
         </div>
-        <input type="text" name="name" placeholder="Your name" class="contact-inputs" required/>
-         <input type="email" name="email" placeholder="Your email" class="contact-inputs" required/>
-         <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
-         <button type="submit">Submit <img src="" alt=""></button>
-      </form>
-
-    <div class="contact-right">
-    <img id="contact-page-main-img" src="/assets/Images/water-being-handed.jpg" alt="Person passing water in a field">
-
+      </div>
     </div>
+    <!-- FOOTER MOVED OUTSIDE contact-body -->
+    <footer>
+      <div class="footer-flexbox">
+        <section class="footer footer-logo">
+          <h1>The Flow State</h1>
+          <!-- Tagline -->
+          <h5>"Keeping NC in Flow"</h5>
+        </section>
+
+        <section class="footer footer-pages">
+          <h2>Pages</h2>
+          <a href="pages/About.html">About</a>
+          <a href="pages/connect.html">Connect</a>
+          <a href="pages/donation.html">Donate</a>
+          <a href="pages/resources.html">Resources</a>
+        </section>
+
+        <section class="footer footer-socials">
+          <h2>Find us on...</h2>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
