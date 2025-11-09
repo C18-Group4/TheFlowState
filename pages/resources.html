@@ -4,34 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resource Page</title>
-    <link rel="Stylesheet" href="resources.css">
+    <link rel="stylesheet" href="../assets/css/resources.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap">
 </head>
 
 <body>
-  <header>
-    
-    <h1>Resources</h1>
-    <!-- Navbar Placement  -->
-    <nav class="rnav">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Get Involved</a></li>
-            <li><a href="#">Donate</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">About Us</a></li>
+    <header>
+        <nav class = "nav nav-top">
+            <a class = "logo-btn" href = "../TheFlowState/index.html">
+              <img src="../assets/Images/TheFlowState.png" alt = "Home">
+              <p>The Flow State</p>
+            </a>
+        </nav>
 
-        </ul>
-    </nav>
+        <nav class = "nav nav-bottom">
+            <a href = "../pages/About.html">About</a>
+            <a href = "../pages/connect.html">Connect</a>
+            <a href = "../pages/donation.html">Donate</a>
+            <a href = "../pages/resources.html">Resources</a>
+        </nav>
 
-    <div class="resource-dd">
+    </header>
 
 
-        
+  <main>
+    <div class="threearticle-container">
+
+      <div class="BoxArticle">
+        <img src="../assets/Images/pfas.png" alt="What is a PfA ? logo">
+        <h3 class="ArticleHeading">Article Name</h3>
+        <p>Short description for article 1</p>
+        <a href="../pages/resource-pfas.html">
+        <button class="Abt">Learn More > </button>
+        </a>
+      </div>
+
+      <div class="BoxArticle">
+        <img src="../assets/Images/runnoffs.png" alt="Agriculture and Urban Runnoff Logo">
+        <h3 class="ArticleHeading">Article Name</h3>
+        <p>Short description for article 2</p>
+        <a href="../pages/resource-runoff.html">
+        <button class="Abt">Learn More > </button>
+        </a>
+      </div>
+
+      <div class="BoxArticle">
+        <img src="../assets/Images/waterplant.png" alt="What is a Water Treatment Plant Logo?">
+        <h3 class="ArticleHeading">Article Name</h3>
+        <p>Short description for article 3.</p>
+        <a href="../pages/resource-treatment.html">
+        <button class="Abt">Learn More > </button>
+        </a>
+      </div>
+
     </div>
+  </main>
+
+  <section>
 
 
 
-  </header>  
+
+  </section>
+
+
+
+  <section>
+
+
+
+
+  </section>
+
 
 
 
@@ -42,10 +86,25 @@
 
 
   <footer>
+    <div class = "footer-flexbox">
+      <section class = "footer footer-logo">
+        <h1>The Flow State</h1>
+        <!-- Tagline -->
+        <h5>"Keeping NC in Flow"</h5>
+      </section>
 
-   
+      <section class = "footer footer-pages">
+        <h2>Pages</h2>
+        <a href = "pages/About.html">About</a>
+        <a href = "pages/connect.html">Connect</a>
+        <a href = "pages/donation.html">Donate</a>
+        <a href = "pages/resources.html">Resources</a>
+      </section>
 
-    </nav>
+      <section class = "footer footer-socials">
+        <h2>Find us on...</h2>
+      </section>
+    </div>
 
   </footer>
 
