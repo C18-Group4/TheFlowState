@@ -698,22 +698,29 @@ ul li {
 
 
 
-/* Resource Three Article's */
 
-/* Article One; What Is PFAS... */
+
+
+
+
+
+/* Resource Three Inner Linked Article's */
+
 .Resbody{
   background: linear-gradient(to bottom, #ffffff, #c6dbef, #9ecae1, #7894b0);
 
 }
 
 
-.ResArticle {
+.ResArticle{
   color: #08306b;
   padding: 5.7em 2em;
   text-align: center;
   font-size: large;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
 
+  p{line-height: 1.7;
+  }
 }
 .Resat{
   padding-top: 1em;
@@ -727,9 +734,89 @@ ul li {
   background: none;
   border: none;
   color: #08306b;
-  margin: 2.7em 0;
+  margin: 2.5em 0;
+  padding-bottom: 2em;
   transition: color 0.2s ease;
 }
 .Resprev:hover{
 color: #4c95c0;
+}
+
+
+
+
+
+
+/* Resource Page */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    /* padding: 2em 0; */
+    height: 1000px;
+}
+.threearticle-container{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+
+
+}
+.PBoxArticle{
+    text-align: center;
+    background-color: #deebf7;
+    border-radius: 12px;
+    vertical-align: top;
+    max-width: 335px;
+    overflow: hidden;
+    color: #08306b;
+
+    p{ padding: 1em; 
+    }
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.AImage { display:block; }
+ .AImage img {
+  /* width: 100%; */
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 10px;
+  aspect-ratio: 1/1;
+ }
+
+.PArticleHeading{
+    font-family: 'Zalando Sans SemiExpanded', sans-serif;
+    padding: 0.2em;
+    
+}
+
+.PBoxArticle p{
+    font-size: 1em;
+    font-family: 'Zalando Sans SemiExpanded', sans-serif;
+} 
+
+.PBoxArticle:hover{
+    transform: scale(1.1) translateY(-10px);
+}
+.PAbt{
+    color: #08306b;
+    font-size: 1em;
+    background-color: #f7f7f7;
+    border: 3px solid #c6dbef;
+    /* border:none; */
+    border-radius: 10px;
+    padding: 7px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.PAbt:hover{
+    background-color: #c6dbef;
 }
