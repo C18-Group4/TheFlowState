@@ -1,6 +1,8 @@
 body,
 * {
   font-family: "Zalando Sans SemiExpanded", sans-serif;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
 }
 
 /* Donation Section Layout */
@@ -13,6 +15,9 @@ body,
 .donation-paragraph {
   display: block;
   text-align: center;
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #08306b;
 }
 
 /* Frequency Button Styling */
@@ -29,24 +34,25 @@ body,
 
 .donation-frequency-button {
   padding: 10px 20px;
-  font-size: 30px;
+  font-size: 1.4em;
   cursor: pointer;
   border: none;
   border-radius: 8px;
   background-color: #deebf7;
-  color: black;
+  color: #08306b;
   transition: background-color 0.3s;
+  letter-spacing: 1px;
 }
 
 .donation-frequency-button:hover,
 .donation-frequency-button:focus {
   background-color: #4292c6;
-  color: white;
+  color: #f7fbff;
 }
 
 .donation-frequency-button.active {
   background-color: #4292c6;
-  color: white;
+  color: #f7fbff;
 }
 
 /* Donation Options Grid */
@@ -71,24 +77,25 @@ body,
 /* Donation Option Buttons */
 .donation-option-button {
   padding: 15px 25px;
-  font-size: 20px;
+  font-size: 1.2em;
   border-radius: 10px;
   border: none;
   background-color: #deebf7;
-  color: black;
+  color: #08306b;
   cursor: pointer;
   transition: all 0.3s ease;
   font-weight: bold;
+  letter-spacing: 0.8px;
 }
 
 .donation-option-button:hover {
   background-color: #4292c6;
-  color: white;
+  color: #f7fbff;
 }
 
 .donation-option-button.active {
   background-color: #4292c6;
-  color: white;
+  color: #f7fbff;
 }
 
 .donation-option-button.custom-amount {
@@ -105,7 +112,7 @@ body,
   border-radius: 10px;
   box-sizing: border-box;
   padding: 15px 25px;
-  font-size: 20px;
+  font-size: 1.2em;
 }
 
 .custom-amount-wrapper:focus-within {
@@ -115,16 +122,17 @@ body,
 
 .custom-amount-symbol {
   margin-right: 8px;
-  font-size: 20px;
+  font-size: 1.2em;
   color: #4292c6;
 }
 
 .custom-amount-input {
   flex: 1;
   border: none;
-  font-size: 20px;
+  font-size: 1.2em;
   outline: none;
   box-sizing: border-box;
+  letter-spacing: 0.5px;
 }
 
 .custom-amount-input::-webkit-outer-spin-button,
@@ -138,14 +146,15 @@ body,
   display: block;
   margin: 20px auto;
   padding: 15px 40px;
-  font-size: 22px;
+  font-size: 1.3em;
   border: none;
   border-radius: 10px;
-  background-color: #4292c6;
-  color: white;
+  background-color: #08306b;
+  color: #f7fbff;
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .donate-button:hover {
@@ -165,20 +174,37 @@ body,
   display: block;
 }
 
-/* Additional Information Section */
+/* Additional Info */
 .donation-info {
-  margin: 0 auto;
-  padding: 20px 20px;
+  background-color: #e3f2fd;
+  padding: 4em 2em;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.donation-info h2 {
+  color: #08306b;
+  margin-bottom: 1.5em;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+}
+
+.donation-info ul {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: left;
 }
 
 .donation-info li {
-  text-align: left;
-  list-style-type: circle;
-}
-
-/* Divider line styling */
-.info-divider {
-  margin: 15px auto;
-  width: 90%;
+  list-style-type: disc;
+  list-style-position: outside;
+  font-size: 1em;
+  color: #08306b;
+  margin-bottom: 1em;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
 }
