@@ -257,6 +257,8 @@ footer section {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
   width: 900px;
   height: 100%;
   background-color: #9ecae1;
@@ -275,6 +277,21 @@ footer section {
   align-items: center;
   box-sizing: border-box;
   min-width: 0;
+}
+
+.slide-home .right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-sizing: border-box; */
+}
+
+.slide-home .right img {
+  max-width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
 
 .slide-home h3 {
