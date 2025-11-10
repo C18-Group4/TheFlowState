@@ -532,7 +532,7 @@ footer section {
 }
 
 .about-details h2 {
-  text-align: start;
+  text-align: center;
   font-size: 2em;
   margin-bottom: 1em;
   color: #08519c;
@@ -560,10 +560,10 @@ footer section {
 
 .about-content img {
   width: 450px;
-  height: 400px;
+  height: 350px;
   border-radius: 30px;
   object-fit: cover;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .about-text {
@@ -706,16 +706,54 @@ ul li {
 /* ----- RESPONSIIVE BREAKPOINTS ----- */
 /* 769px–1297px: Tablets and small laptops */
 @media (min-width: 769px) and (max-width: 1297px) {
-  /* */
+  .about-details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-details img {
+    width: 80%;
+    margin-bottom: 1.5em;
+  }
+
 }
 
 /* 481px–768px: Large phones and small tablets */
 @media (min-width: 481px) and (max-width: 768px) {
-  /* */
+  .about-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-details img {
+    width: 90%;
+    margin-bottom: 1.2em;
+  }
+
 }
 
 /* 0px–480px: Mobile phones */
 @media (max-width: 480px) {
-  /* */
+  .about-details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2em 1em;
+  }
+
+  .about-details img {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .about-details p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+  .about-content {
+    align-items: center;
+  }
+
 }
 
