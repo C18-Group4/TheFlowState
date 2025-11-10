@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,8 +16,8 @@
       href="../assets/Images/TheFlowState.png"
     />
 
-    <link rel="stylesheet" href="../assets/css/donation.css" />
     <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/donation.css" />
   </head>
 
   <body>
@@ -28,20 +27,28 @@
           <img src="../assets/Images/TheFlowState.png" alt="Home" />
           <p>The Flow State</p>
         </a>
+        <!-- Hamburger button -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
 
-      <nav class="nav nav-bottom">
+      <nav class="nav nav-bottom" id="nav-menu">
         <a href="About.html">About</a>
         <a href="connect.html">Connect</a>
         <a href="donation.html">Donate</a>
         <a href="resources.html">Resources</a>
       </nav>
     </header>
+
     <div class="donation-banner">
       <img
         src="../assets/Images/donation-waterbanner.png"
         class="donation-banner-img"
       />
+      <h2>Donate</h2>
     </div>
 
     <section class="donation-section">
@@ -154,6 +161,7 @@
             <input
               type="text"
               id="billing-card"
+              inputmode="numeric"
               minlength="14"
               maxlength="16"
               required
@@ -164,6 +172,7 @@
             <input
               type="text"
               id="billing-cvv"
+              inputmode="numeric"
               minlength="3"
               maxlength="4"
               required
@@ -174,6 +183,7 @@
             <input
               type="text"
               id="billing-exp"
+              inputmode="numeric"
               minlength="3"
               maxlength="4"
               placeholder="MM/YY"
@@ -211,10 +221,7 @@
         <h2>Find us on...</h2>
         <div class="socials-container">
           <a class="instagram-btn" href="https://www.instagram.com/">
-            <img
-              src="../assets/Images/Instagram.png"
-              alt="Instagram"
-            />
+            <img src="../assets/Images/Instagram.png" alt="Instagram" />
           </a>
           <a class="fb-btn" href="https://www.instagram.com/">
             <img src="../assets/Images/FB.png" alt="Facebook" />
