@@ -123,6 +123,7 @@
   font-size: 1.2em;
   outline: none;
   box-sizing: border-box;
+  background-color: transparent;
   letter-spacing: 0.5px;
 }
 
@@ -157,6 +158,18 @@
   width: 100%;
   margin: 0;
   padding-top: 75px;
+  color: #08519c;
+  text-decoration: underline #66b0d6 3px;
+  text-underline-offset: 15px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.donation-banner h2 {
+  margin: 20px 0 10px 0;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  font-weight: 650;
 }
 
 .donation-banner-img {
@@ -291,3 +304,6 @@
 .return-home-btn:hover {
   background-color: #08519c;
 }
+
+/* Everything below is mobile */
+

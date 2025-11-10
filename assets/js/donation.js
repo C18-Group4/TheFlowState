@@ -153,10 +153,20 @@ donateButton.addEventListener("click", () => {
     return;
   }
   billing.style.display = "flex";
+  billing.setAttribute("aria-hidden", "false"); // accessibility & mobile ux
+  document.getElementById("billing-name").focus(); // accessibility & mobile ux
 });
 
 closeBilling.addEventListener("click", () => {
-  billing.style.display = "none";
+  billing.style.display = "none"; 
+  billing.setAttribute("aria-hidden", "true"); // accessibility & mobile ux
+});
+
+// closes when a mobile user clicks outside of form
+billing.addEventListener("click", (e) => {
+  if (e.target === billing) {
+    billing.style.display = "none";
+  }
 });
 
 billingForm.addEventListener("submit", (e) => {
@@ -221,3 +231,6 @@ billingForm.addEventListener("submit", (e) => {
     selectedFrequency
   )}&amount=${encodeURIComponent(selectedAmount)}`;
 });
+
+
+// Everything below is mobile
