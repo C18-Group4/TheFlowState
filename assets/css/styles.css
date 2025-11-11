@@ -262,9 +262,6 @@ footer section {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  /* width: 900px;
-  height: 500px;
-  border-radius: 10px; */
 }
 
 .get-involved-overlay h2 {
@@ -318,7 +315,6 @@ footer section {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* box-sizing: border-box; */
 }
 
 .slide-home .right img {
@@ -621,6 +617,8 @@ footer section {
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
+
+
 
 
 /* ========================================
@@ -1834,7 +1832,7 @@ color: #4c95c0;
 @media (max-width: 480px) {
 
   /* ********* General ********* */
-  /* ----- Naavigation ----- */
+  /* ----- Navigation ----- */
   header {
     display: flex;
     flex-direction: column;
@@ -2066,17 +2064,69 @@ color: #4c95c0;
   /* ******** TY PAGE ********* */
 
   .thankyou-body {
-    padding: 75px 0 0 0;
+    padding-top: 160px; 
   }
   
   .thankyou-container {
     padding: 1.5rem 1rem;
     gap: 1.5rem;
+    flex-direction: column;
+  }
+  
+  .thankyou-content {
+    max-width: 100%;
+  }
+  
+  .thankyou-content h1 {
+    font-size: 36px;
+  }
+  
+  .thankyou-message {
+    font-size: 16px;
+  }
+  
+  .thankyou-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .thankyou-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .thankyou-image img {
+    width: 100%;
+    max-width: 350px;
+  }
+  /* ***** END TY PAGE ***** */
+}
+
+/* ================================== */
+/*      0px–480px: Mobile phones      */
+/* ================================== */
+@media (max-width: 480px) {
+
+  /* ******** TY PAGE - ********* */
+
+  .thankyou-body {
+    padding: 160px 0 0 0; 
+  }
+  
+  .thankyou-container {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+    flex-direction: column; 
   }
   
   .thankyou-icon svg {
     width: 60px;
     height: 60px;
+  }
+  
+  .thankyou-content {
+    max-width: 100%; 
   }
   
   .thankyou-content h1 {
@@ -2086,41 +2136,24 @@ color: #4c95c0;
   .thankyou-message {
     font-size: 15px;
     margin-bottom: 1.5rem;
+    padding: 0 0.5rem; 
+  }
+  
+  .thankyou-actions {
+    flex-direction: column; 
+    width: 100%; 
+    max-width: 300px;
   }
   
   .thankyou-btn {
     padding: 12px 24px;
     font-size: 15px;
+    width: 100%; 
+    justify-content: center; 
   }
   
   .thankyou-image img {
     max-width: 100%;
   }
-  /* ******** END ABOUT PAGE ********* */
-
-  /* ******** CONTACT PAGE ********* */
-
-  .contact-body {
-    padding-top: 75px;
-  }
-  
-  .contact-container {
-    padding: 1.5rem 1rem;
-  }
-  
-  .contact-left-title h2 {
-    font-size: 32px;
-  }
-  
-  .contact-inputs {
-    width: 90vw;
-    padding-left: 20px;
-  }
-  
-  .contact-left button {
-    width: 100%;
-    justify-content: center;
-  }
-  /* ******** END CONTACT PAGE ********* */
-  
+  /* ******** END TY PAGE ********* */
 }
