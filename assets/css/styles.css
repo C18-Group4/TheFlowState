@@ -409,7 +409,8 @@ footer section {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 2rem 1rem; 
+  padding: 2rem 1rem;
+  overflow: hidden; 
 }
 
 #contact-page-main-img {
