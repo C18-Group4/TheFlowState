@@ -36,5 +36,5 @@ The core purpose of this project is to raise awareness of the health impacts ass
    ```bash
    File -> Open Folder -> TheFlowState 
 4. **Install VSCode's 'Open Live Server' extension**
-5. **Inside VSCode, Select ../TheFlowState/pages/index.html **
+5. **Inside VSCode, Select ../TheFlowState/pages/index.html**
 6. **Click 'Go Live' at the bottom right of your VSCode**
