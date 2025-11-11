@@ -1,4 +1,4 @@
-<img width="612" height="614" alt="image" src="https://github.com/user-attachments/assets/8ac098cf-4590-4852-ab01-ef6f4c307164" /># The Flow State
+# The Flow State
 Code for Justice.
 
 ## Project Overview:
