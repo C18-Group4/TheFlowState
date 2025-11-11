@@ -1288,45 +1288,22 @@ ul li {
 /*END OF ABOUT PAGE STYLING*/
 
 
-/* Resource Three Inner Linked Article's */
-
-.Resbody{
-  background: linear-gradient(to bottom, #ffffff, #c6dbef, #9ecae1, #7894b0);
-
-}
 
 
-.ResArticle{
-  color: #08306b;
-  padding: 5.7em 2em;
-  text-align: center;
-  font-size: large;
+/*-- Resource Page --*/
+
+.ResTitle h2 {
+  margin-top: 4.5em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 40px;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
-
-  p{line-height: 1.7;
-  }
+  color:#08306b;
+  border-bottom: 3px solid #6baed6;
+  display: inline-block;
+  padding-bottom: 0.2em;
 }
-.Resat{
-  padding-top: 1em;
-}
-.Resprev{
-  display: flex;
-  justify-content: left;
-  font-family: "Zalando Sans SemiExpanded", sans-serif;;
-  font-size: 0.9em;
-  font-weight:500;
-  background: none;
-  border: none;
-  color: #08306b;
-  margin: 2.5em 0;
-  padding-bottom: 2em;
-  transition: color 0.2s ease;
-}
-.Resprev:hover{
-color: #4c95c0;
-}
-
-/* Resource Page */
 
 .threearticle-container{
     display: flex;
@@ -1393,9 +1370,52 @@ img{
 .PAbt:hover{
     background-color: #6baed6;
 }
+/* ------------------------------ */
 
 
-/* The 2 Stories Below Article's & Including PDF Export */
+
+/* Resource Three Inner Linked Article's */
+
+.Resbody{
+  background: linear-gradient(to bottom, #ffffff, #c6dbef, #9ecae1, #7894b0);
+
+}
+
+
+.ResArticle{
+  color: #08306b;
+  padding: 5.7em 2em;
+  text-align: center;
+  font-size: large;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+
+  p{line-height: 1.7;
+  }
+}
+.Resat{
+  padding-top: 1em;
+}
+.Resprev{
+  display: flex;
+  justify-content: left;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;;
+  font-size: 0.9em;
+  font-weight:500;
+  background: none;
+  border: none;
+  color: #08306b;
+  margin: 2.5em 0;
+  padding-bottom: 2em;
+  transition: color 0.2s ease;
+}
+.Resprev:hover{
+color: #4c95c0;
+}
+/* ----------------------- */
+
+
+
+/* The 2 Stories Below Article's,  Including PDF Paragraph */
 
 .ResPdf {
   background: linear-gradient(to bottom,#f7fbff, #9ecae1, #f7fbff);
@@ -1409,18 +1429,7 @@ img{
 
 }
 
-/* @media(min-width:1176px){
-.ResPdf {
-  background: linear-gradient(to bottom,#f7fbff, #9ecae1, #f7fbff);
-  color: #08306b;
-  padding: 0.4em 3em 0 3em;
-  margin: 10em 0 20em 0;
-  text-align: center;
-  font-family: "Zalando Sans SemiExpanded", sans-serif;
-  line-height: 1.7;
-  align-items: stretch;
 
-}} */
 
 .ResPdf h2 {
   font-size: 2em;
@@ -1499,6 +1508,64 @@ img{
   display: inline-block;
   padding-bottom: 0.5em;
 }
+
+/* --------------------- */
+
+/* RESPONSIVE RESOURCE PAGE */
+@media (min-width: 769px) and (max-width: 1297px) {
+
+.Resbody br{
+  display: none;
+}
+
+.ResStory, .ResStorytwo{
+  align-items: center;
+}
+
+.RStorypic img {
+  width: 100%;
+  height:auto;
+  padding:25px;
+  margin-top:55px;
+}
+.articleOne br {
+  display: none;
+}
+}
+
+/* -------------------- */
+@media screen and (max-width: 768px) {
+
+.Resbody br{
+  display: none;
+}
+.Resbody p{
+  font-size: 15px;
+}
+.Resbody h1{
+  font-size: 1.5em;
+}
+.ResStory, .ResStorytwo {
+  display: flex;
+  flex-direction: column;
+}
+.RStorypic img{
+  width: 100%;
+  padding:2px;
+}
+.articleOne br{
+  display: none;
+}
+}
+
+
+
+
+
+
+
+
+
 
 /* ----- RESPONSIIVE BREAKPOINTS ----- */
 /* 769px–1297px: Tablets and small laptops */
